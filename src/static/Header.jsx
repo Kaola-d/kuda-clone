@@ -72,6 +72,12 @@ align-items: center;
 box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 max-width: 1280px;
 margin: 0px auto;
+
+@media (max-width: 800px) {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
 `
 const LogoNav = styled.div`
 display: flex;
@@ -82,12 +88,24 @@ margin:0px 80px 0px 60px;
 img{
     width: 40px;
 }
+
+@media (max-width: 800px) {
+        display: flex;
+        margin: 0px;
+        img{
+            width: 30px;
+        }
+    }
 `
 const Span = styled.div`
     font-weight: 700;
     margin-left: -70px;
     color: #5e025e;
     font-size: 25px;
+
+    @media (max-width: 800px) {
+        margin-left: 10px;
+    }
 `
 const Navigations = styled.div`
 display: flex;
@@ -156,7 +174,12 @@ display: flex;
 /* margin-right: 10%; */
 img{
     width: 30px;
-}`
+}
+
+@media (max-width: 800px) {
+        margin-right: -30px;
+    }
+`
 
 const Sidenav = styled.div`
     font-size: 44px;
@@ -164,5 +187,6 @@ const Sidenav = styled.div`
 
 @media (max-width: 800px) {
         display: block;
+        width: 50px;
     }
 `
