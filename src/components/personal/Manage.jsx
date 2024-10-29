@@ -135,6 +135,7 @@ const Take = styled.div`
 const ManageWrapper = styled.div`
      width: 85%;
      display : flex;
+     flex-wrap: wrap-reverse;
      justify-content: space-evenly;
      align-items: center;
      margin: 0px auto;
@@ -156,7 +157,13 @@ const ManageSub = styled.div`
 const ManageImg = styled.div`
     width: 400px;
     img{
-        width: 500px;
+        width: 400px;
+    }
+
+    @media (max-width: 800px) {
+       img{
+        width: 250px;
+       }
     }
 `
 
@@ -174,6 +181,7 @@ const ManageImg = styled.div`
 const SeriouslyWrapper = styled.div`
      width: 85%;
      display : flex;
+     flex-wrap: wrap;
      justify-content: space-evenly;
      align-items: center;
      margin: 0px auto;
@@ -200,13 +208,20 @@ const Serious = styled.div`
 const SeriouslyImg = styled.div`
     width: 400px;
     img{
-        width: 500px;
+        width: 400px;
+    }
+
+    @media (max-width: 800px) {
+       img{
+        width: 250px;
+       }
     }
 `
 
 const BlockWrapper = styled.div`
      width: 85%;
      display : flex;
+     flex-wrap: wrap-reverse;
      justify-content: space-evenly;
      align-items: center;
      margin: 0px auto;
@@ -234,7 +249,13 @@ const Bllock = styled.div`
 const BlockImg = styled.div`
     width: 400px;
     img{
-        width: 500px;
+        width: 400px;
+    }
+
+    @media (max-width: 800px) {
+       img{
+        width: 250px;
+       }
     }
 `
 
@@ -242,6 +263,7 @@ const BlockImg = styled.div`
 const HappyWrapper = styled.div`
      width: 85%;
      display : flex;
+     flex-wrap: wrap;
      justify-content: space-evenly;
      align-items: center;
      margin: 0px auto;
@@ -268,7 +290,13 @@ const Happy = styled.div`
 const HappyImg = styled.div`
     width: 400px;
     img{
-        width: 500px;
+        width: 400px;
+    }
+
+    @media (max-width: 800px) {
+       img{
+        width: 250px;
+       }
     }
 `
 
@@ -276,6 +304,7 @@ const HappyImg = styled.div`
 const GlassWrapper = styled.div`
      width: 85%;
      display : flex;
+     flex-wrap: wrap-reverse;
      justify-content: space-evenly;
      align-items: center;
      margin: 0px auto;
@@ -303,6 +332,12 @@ const Glass = styled.div`
 const GlassImg = styled.div`
     width: 400px;
     img{
-        width: 500px;
+        width: 400px;
+    }
+
+    @media (max-width: 800px) {
+       img{
+        width: 250px;
+       }
     }
 `

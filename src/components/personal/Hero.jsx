@@ -12,7 +12,6 @@ const Hero = () => {
                     <div>
                     <Store>
                         <img src={appst}alt="" />
-                        <img src={googl} alt="" />
                     </Store>
                 </div>
                 <Cbn>
@@ -38,19 +37,23 @@ const Parent = styled.div`
     max-width: 1280px;
     min-height: calc(100vh - 70px);
     margin: 0px auto;
+
+
 `
 const HeroContainer = styled.div`
     max-width: 400px;
     display: flex;
     flex-direction: column;
     /* border: 1px solid red; */
-    margin-left: 80px;
+    /* margin-left: 80px; */
+    align-items: center;
 
     h1{
         font-weight: 700;
         font-size: 45px;
         line-height: 50px;
         color: #5e025e;
+        /* text-align: center; */
     }
 
     p{
@@ -59,19 +62,31 @@ const HeroContainer = styled.div`
         font-weight: 600;
     }
 
+    @media (max-width: 800px) {
+        text-align: center;
+        width: 100%;
+        h1{
+            font-size: 35px;
+        }
+        p{
+            font-size: 18px;
+        }
+    }
+
 `
 const Store = styled.div`
     display: flex;
-    height: 50px;
-    margin: 20px 0;
-    border: none;
-    outline: none;
-    gap: 20px;
+    height: 40px;
+    /* margin: 0 auto; */
+    /* align-items: ; */
+    img{
+        width: 250px;
+    }
 `
 
 const Cbn = styled.div`
     img{
-        width: 400px;
+        width: 300px;
     }
 `
 
@@ -82,13 +97,18 @@ const HeroFather = styled.div`
     align-items: center;
     width: 85%;
     /* border: 1px solid blue; */
-    margin-top: -30px;
+    margin-top: -10px;
 
 `
 const Rotat = styled.div`
     img{
         width: 400px;
-        margin-right: 80px;
-        /* border: 1px solid black; */
     }
+
+    @media (max-width: 800px) {
+       img{
+        width: 280px;
+       }
+    }
+
 `

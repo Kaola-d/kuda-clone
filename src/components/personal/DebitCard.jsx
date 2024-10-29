@@ -44,6 +44,7 @@ const DebitContainer = styled.div`
 const DebitWrapper = styled.div`
      width: 85%;
      display : flex;
+     flex-wrap: wrap;
      justify-content: space-evenly;
      align-items: center;
      margin: 0px auto;
@@ -70,6 +71,12 @@ const Acco = styled.div`
 const DebitImg = styled.div`
     width: 400px;
     img{
-        width: 500px;
+        width: 400px;
+    }
+
+    @media (max-width: 800px) {
+       img{
+        width: 250px;
+       }
     }
 `
